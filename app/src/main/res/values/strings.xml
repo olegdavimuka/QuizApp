@@ -1,46 +1,220 @@
 <resources>
     <string name="app_name">QuizApp</string>
+
+    <!--Game of Thrones-->
+    <string name="gameOfThrones">Game of thrones</string>
+
+    <string name="gameOfThronesQuestion_1">Which of the following is NOT a family in Game of Thrones?</string>
+    <string name="gameOfThronesQuestion_1_Answer_1">Stark</string>
+    <string name="gameOfThronesQuestion_1_Answer_2">Tyrell</string>
+    <string name="gameOfThronesQuestion_1_Answer_3">Mortensen</string>
+
+    <string name="gameOfThronesQuestion_2">In the first episode of season 1, who accidentally discovers Queen Cersei\'s secret?</string>
+    <string name="gameOfThronesQuestion_2_Answer_1">Arya Stark</string>
+    <string name="gameOfThronesQuestion_2_Answer_2">Bran Stark</string>
+    <string name="gameOfThronesQuestion_2_Answer_3">Tyrion Lannister</string>
+
+    <string name="gameOfThronesQuestion_3">Who is Robb Stark\'s mother?</string>
+    <string name="gameOfThronesQuestion_3_Answer_1">Talisa Stark</string>
+    <string name="gameOfThronesQuestion_3_Answer_2">Sansa Stark</string>
+    <string name="gameOfThronesQuestion_3_Answer_3">Catelyn Stark</string>
+
+    <string name="gameOfThronesQuestion_4">What does Tyrion murder his father with?</string>
+    <string name="gameOfThronesQuestion_4_Answer_1">Crossbow</string>
+    <string name="gameOfThronesQuestion_4_Answer_2">Poison</string>
+    <string name="gameOfThronesQuestion_4_Answer_3">Mace</string>
+
+    <string name="gameOfThronesQuestion_5">Who is known as "The Kingslayer"?</string>
+    <string name="gameOfThronesQuestion_5_Answer_1">Sandor Clegane</string>
+    <string name="gameOfThronesQuestion_5_Answer_2">Jaime Lannister</string>
+    <string name="gameOfThronesQuestion_5_Answer_3">Joffrey Baratheon</string>
+
+    <string name="gameOfThronesQuestion_6">What murders Lady Walda and her child?</string>
+    <string name="gameOfThronesQuestion_6_Answer_1">Dogs</string>
+    <string name="gameOfThronesQuestion_6_Answer_2">Direwolves</string>
+    <string name="gameOfThronesQuestion_6_Answer_3">White Walkers</string>
+
+    <string name="gameOfThronesQuestion_7">Who said this memorable line: "You know nothing, Jon Snow."</string>
+    <string name="gameOfThronesQuestion_7_Answer_1">Daenerys Targaryen</string>
+    <string name="gameOfThronesQuestion_7_Answer_2">Ygritte</string>
+    <string name="gameOfThronesQuestion_7_Answer_3">Cersei Lannister</string>
+
+    <string name="gameOfThronesQuestion_8">What was Lord Petyr Baelish\'s role on the Small Council?</string>
+    <string name="gameOfThronesQuestion_8_Answer_1">Master of Coin</string>
+    <string name="gameOfThronesQuestion_8_Answer_2">Master of War</string>
+    <string name="gameOfThronesQuestion_8_Answer_3">Master of Ships</string>
+
+    <string name="gameOfThronesQuestion_9">What is the name of the ancestral Stark sword that Tywin Lannister oversees the reforging of in the first episode of season 3?</string>
+    <string name="gameOfThronesQuestion_9_Answer_1">Drogo</string>
+    <string name="gameOfThronesQuestion_9_Answer_2">Needle</string>
+    <string name="gameOfThronesQuestion_9_Answer_3">Ice</string>
+
+    <string name="gameOfThronesQuestion_10">What does Ramsay Bolton do to Theon Greyjoy so that he will call himself "Reek"?</string>
+    <string name="gameOfThronesQuestion_10_Answer_1">Threatens to kill Theon baby sister.</string>
+    <string name="gameOfThronesQuestion_10_Answer_2">Tortures him sadistically in many ways.</string>
+    <string name="gameOfThronesQuestion_10_Answer_3">Asks nicely.</string>
+
+    <!--Breaking Bad-->
+    <string name="breakingBad">Breaking Bad</string>
+
+    <string name="breakingBadQuestion_1">In the pilot, the first sentence is&#8230;</string>
+    <string name="breakingBadQuestion_1_Answer_1">"Oh, my God, think, think, think!"</string>
+    <string name="breakingBadQuestion_1_Answer_2">"My name is Walter Hartwell White."</string>
+    <string name="breakingBadQuestion_1_Answer_3">"Oh, my God, Christ!"</string>
+
+    <string name="breakingBadQuestion_2">How many people died on the Wayfarer 515?</string>
+    <string name="breakingBadQuestion_2_Answer_1">137</string>
+    <string name="breakingBadQuestion_2_Answer_2">167</string>
+    <string name="breakingBadQuestion_2_Answer_3">173</string>
+
+    <string name="breakingBadQuestion_3">In episode "Better Call Saul," Saul represents Badger in a case after he is caught distributing methamphetamine. Walter offers Saul money in order for Saul to not talk to the DEA about "Heisenberg." Saul refuses the offer. How much did Walt offer?</string>
+    <string name="breakingBadQuestion_3_Answer_1">$15,000</string>
+    <string name="breakingBadQuestion_3_Answer_2">$10,000</string>
+    <string name="breakingBadQuestion_3_Answer_3">$20,000</string>
+
+    <string name="breakingBadQuestion_4">Who is the head of the food division in Madrigal Electromotive?</string>
+    <string name="breakingBadQuestion_4_Answer_1">Peter Schuler</string>
+    <string name="breakingBadQuestion_4_Answer_2">Dan Wachsberger</string>
+    <string name="breakingBadQuestion_4_Answer_3">George Merkert</string>
+
+    <string name="breakingBadQuestion_5">Walter turned these coordinates into a Lottery ticket. What were the first 6 numbers on the ticket?</string>
+    <string name="breakingBadQuestion_5_Answer_1">0 3 4 0 5 9</string>
+    <string name="breakingBadQuestion_5_Answer_2">0 3 5 0 5 2</string>
+    <string name="breakingBadQuestion_5_Answer_3">0 3 6 0 5 2</string>
+
+    <string name="breakingBadQuestion_6">What drink does Lydia order in the café in episode "Felina?"</string>
+    <string name="breakingBadQuestion_6_Answer_1">Black coffee</string>
+    <string name="breakingBadQuestion_6_Answer_2">Tea with soy milk</string>
+    <string name="breakingBadQuestion_6_Answer_3">Chamomile tea</string>
+
+    <string name="breakingBadQuestion_7">What is Jack\'s last sentence before Walt shoots him?</string>
+    <string name="breakingBadQuestion_7_Answer_1">"You want your money, right?"</string>
+    <string name="breakingBadQuestion_7_Answer_2">"You pull that trigger, you'll never&#8230;"</string>
+    <string name="breakingBadQuestion_7_Answer_3">"Wait&#8230;"</string>
+
+    <string name="breakingBadQuestion_8">Before Walt dies, he says&#8230;</string>
+    <string name="breakingBadQuestion_8_Answer_1">"&#8230;goodbye Lydia."</string>
+    <string name="breakingBadQuestion_8_Answer_2">"I want this."</string>
+    <string name="breakingBadQuestion_8_Answer_3">"No."</string>
+
+    <string name="breakingBadQuestion_9">How many deaths does Walter cause over the course of the series?</string>
+    <string name="breakingBadQuestion_9_Answer_1">31</string>
+    <string name="breakingBadQuestion_9_Answer_2">178</string>
+    <string name="breakingBadQuestion_9_Answer_3">198</string>
+
+    <string name="breakingBadQuestion_10">How much money did Skyler realize Walt makes in a year?</string>
+    <string name="breakingBadQuestion_10_Answer_1">7 million dollars</string>
+    <string name="breakingBadQuestion_10_Answer_2">8 million dollars</string>
+    <string name="breakingBadQuestion_10_Answer_3">9 million dollars</string>
+
+    <!--Sherlock-->
+    <string name="sherlock">Sherlock</string>
+
+    <string name="sherlockQuestion_1">What was Sherlock\'s childhood best friend called?</string>
+    <string name="sherlockQuestion_1_Answer_1">Peter</string>
+    <string name="sherlockQuestion_1_Answer_2">Nartin</string>
+    <string name="sherlockQuestion_1_Answer_3">Victor</string>
+
+    <string name="sherlockQuestion_2">Where did John graduate with a Bachelor of Medicine and Surgery?</string>
+    <string name="sherlockQuestion_2_Answer_1">Exeter University</string>
+    <string name="sherlockQuestion_2_Answer_2">King\'s College, London</string>
+    <string name="sherlockQuestion_2_Answer_3">Cambridge University</string>
+
+    <string name="sherlockQuestion_3">What is the name of Mycroft\'s private club?</string>
+    <string name="sherlockQuestion_3_Answer_1">The Latet Club</string>
+    <string name="sherlockQuestion_3_Answer_2">The Diogenes Club</string>
+    <string name="sherlockQuestion_3_Answer_3">The Silentium Club</string>
+
+    <string name="sherlockQuestion_4">What is the minimum rating out of 10 that a case has to be for Sherlock to leave his flat for it?</string>
+    <string name="sherlockQuestion_4_Answer_1">6</string>
+    <string name="sherlockQuestion_4_Answer_2">7</string>
+    <string name="sherlockQuestion_4_Answer_3">8</string>
+
+    <string name="sherlockQuestion_5">What is the real life London road used for Baker Street called?</string>
+    <string name="sherlockQuestion_5_Answer_1">North Gower Street</string>
+    <string name="sherlockQuestion_5_Answer_2">Grafton Way</string>
+    <string name="sherlockQuestion_5_Answer_3">Drummond Street</string>
+
+    <string name="sherlockQuestion_6">What is Irene Adler\'s Twitter handle?</string>
+    <string name="sherlockQuestion_6_Answer_1">TheWhipHand</string>
+    <string name="sherlockQuestion_6_Answer_2">TheWoman</string>
+    <string name="sherlockQuestion_6_Answer_3">thedominatrix</string>
+
+    <string name="sherlockQuestion_7">What is Mrs Hudson\'s maiden name?</string>
+    <string name="sherlockQuestion_7_Answer_1">Stubbs</string>
+    <string name="sherlockQuestion_7_Answer_2">Sessions</string>
+    <string name="sherlockQuestion_7_Answer_3">Sissons</string>
+
+    <string name="sherlockQuestion_8">Which actor also auditioned for John Watson?</string>
+    <string name="sherlockQuestion_8_Answer_1">Tom Hiddleston</string>
+    <string name="sherlockQuestion_8_Answer_2">Andrew Lincoln</string>
+    <string name="sherlockQuestion_8_Answer_3">Matt Smith</string>
+
+    <string name="sherlockQuestion_9">What was the name of Speedy\'s Cafe in the unaired pilot episode?</string>
+    <string name="sherlockQuestion_9_Answer_1">Rafferty\'s</string>
+    <string name="sherlockQuestion_9_Answer_2">Cafe Hudson</string>
+    <string name="sherlockQuestion_9_Answer_3">Mrs Hudson\'s Snax n\' Sarnies</string>
+
+    <string name="sherlockQuestion_10">What is the date of John and Mary\'s wedding?</string>
+    <string name="sherlockQuestion_10_Answer_1">May 18</string>
+    <string name="sherlockQuestion_10_Answer_2">May 19</string>
+    <string name="sherlockQuestion_10_Answer_3">May 20</string>
+
+    <!--Spartacus-->
+    <string name="spartacus">Spartacus</string>
+
+    <string name="spartacusQuestion_1">What tribe was Spartacus part of?</string>
+    <string name="spartacusQuestion_1_Answer_1">Thracians</string>
+    <string name="spartacusQuestion_1_Answer_2">Plebeians</string>
+    <string name="spartacusQuestion_1_Answer_3">Plebeians</string>
+
+    <string name="spartacusQuestion_2">Which Roman commander betrayed Spartacus?</string>
+    <string name="spartacusQuestion_2_Answer_1">Marcus Licinius Crassus</string>
+    <string name="spartacusQuestion_2_Answer_2">Claudius Glaber</string>
+    <string name="spartacusQuestion_2_Answer_3">Lentulus Batiatus</string>
+
+    <string name="spartacusQuestion_3">Who owned the gladiator school where Spartacus ended up?</string>
+    <string name="spartacusQuestion_3_Answer_1">Lentulus Batiatus</string>
+    <string name="spartacusQuestion_3_Answer_2">Claudius Glaber</string>
+    <string name="spartacusQuestion_3_Answer_3">Barca</string>
+
+    <string name="spartacusQuestion_4">How many gladiators did Spartacus defeat in his first fight in the arena?</string>
+    <string name="spartacusQuestion_4_Answer_1">1</string>
+    <string name="spartacusQuestion_4_Answer_2">4</string>
+    <string name="spartacusQuestion_4_Answer_3">10</string>
+
+    <string name="spartacusQuestion_5">Who trained Spartacus?</string>
+    <string name="spartacusQuestion_5_Answer_1">Barca</string>
+    <string name="spartacusQuestion_5_Answer_2">Ashur</string>
+    <string name="spartacusQuestion_5_Answer_3">Oenomaus</string>
+
+    <string name="spartacusQuestion_6">Who was the wife of Spartacus?</string>
+    <string name="spartacusQuestion_6_Answer_1">Licinia</string>
+    <string name="spartacusQuestion_6_Answer_2">Ilithyia</string>
+    <string name="spartacusQuestion_6_Answer_3">Sura</string>
+
+    <string name="spartacusQuestion_7">What title did Crixus hold when Spartacus arrived?</string>
+    <string name="spartacusQuestion_7_Answer_1">Lanista</string>
+    <string name="spartacusQuestion_7_Answer_2">Champion of Capua</string>
+    <string name="spartacusQuestion_7_Answer_3">Gladiator trainer</string>
+
+    <string name="spartacusQuestion_8">What is a lanista?</string>
+    <string name="spartacusQuestion_8_Answer_1">A champion gladiator</string>
+    <string name="spartacusQuestion_8_Answer_2">A Roman soldier</string>
+    <string name="spartacusQuestion_8_Answer_3">An owner of gladiators</string>
+
+    <string name="spartacusQuestion_9">Who was the Champion of Capua before Crixus?</string>
+    <string name="spartacusQuestion_9_Answer_1">Varro</string>
+    <string name="spartacusQuestion_9_Answer_2">Gannicus</string>
+    <string name="spartacusQuestion_9_Answer_3">Nasir</string>
+
+    <string name="spartacusQuestion_10">Who killed Varro?</string>
+    <string name="spartacusQuestion_10_Answer_1">Spartacus</string>
+    <string name="spartacusQuestion_10_Answer_2">Agron</string>
+    <string name="spartacusQuestion_10_Answer_3">Crixus</string>
+
+    <!--Other-->
     <string name="Question">Question</string>
     <string name="Answer">Answer</string>
     <string name="Submit">Submit</string>
-    <string name="Question_1">Which of the following is NOT a family in Game of Thrones?</string>
-    <string name="Answer_1A">Stark</string>
-    <string name="Answer_1B">Tyrell</string>
-    <string name="Answer_1C">Mortensen</string>
-    <string name="Question_2">In the first episode of season 1, who accidentally discovers Queen Cersei\'s secret?</string>
-    <string name="Answer_2A">Arya Stark</string>
-    <string name="Answer_2B">Bran Stark</string>
-    <string name="Answer_2C">Tyrion Lannister</string>
-    <string name="Question_3">Who is Robb Stark\'s mother?</string>
-    <string name="Answer_3A">Talisa Stark</string>
-    <string name="Answer_3B">Sansa Stark</string>
-    <string name="Answer_3C">Catelyn Stark</string>
-    <string name="Question_4">What does Tyrion murder his father with?</string>
-    <string name="Answer_4A">Crossbow</string>
-    <string name="Answer_4B">Poison</string>
-    <string name="Answer_4C">Mace</string>
-    <string name="Question_5">Who is known as "The Kingslayer"?</string>
-    <string name="Answer_5A">Sandor Clegane</string>
-    <string name="Answer_5B">Jaime Lannister</string>
-    <string name="Answer_5C">Joffrey Baratheon</string>
-    <string name="Question_6">What murders Lady Walda and her child?</string>
-    <string name="Answer_6A">Dogs</string>
-    <string name="Answer_6B">Direwolves</string>
-    <string name="Answer_6C">White Walkers</string>
-    <string name="Question_7">Who said this memorable line: "You know nothing, Jon Snow."</string>
-    <string name="Answer_7A">Daenerys Targaryen</string>
-    <string name="Answer_7B">Ygritte</string>
-    <string name="Answer_7C">Cersei Lannister</string>
-    <string name="Question_8">What was Lord Petyr Baelish\'s role on the Small Council?</string>
-    <string name="Answer_8A">Master of Coin</string>
-    <string name="Answer_8B">Master of War</string>
-    <string name="Answer_8C">Master of Ships</string>
-    <string name="Question_9">What is the name of the ancestral Stark sword that Tywin Lannister oversees the reforging of in the first episode of season 3?</string>
-    <string name="Answer_9A">Drogo</string>
-    <string name="Answer_9B">Needle</string>
-    <string name="Answer_9C">Ice</string>
-    <string name="Question_10">What does Ramsay Bolton do to Theon Greyjoy so that he will call himself "Reek"?</string>
-    <string name="Answer_10A">Threatens to kill Theon baby sister.</string>
-    <string name="Answer_10B">Tortures him sadistically in many ways.</string>
-    <string name="Answer_10C">Asks nicely.</string>
 </resources>

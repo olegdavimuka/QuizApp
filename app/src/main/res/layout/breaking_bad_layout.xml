@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/breakingBadScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/breaking_bad_background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizapp.MainActivity">
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_1_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_1" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_1_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_1_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_1_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_1_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_1_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_1_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_1_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_1_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_2_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_2" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_2_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_2_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_2_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_2_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_2_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_2_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_2_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_2_SubmitButton"
+            style="@style/SubmitButton" />
+
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_3_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_3" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_3_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_3_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_3_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_3_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_3_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_3_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_3_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_3_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_4_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_4" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_4_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_4_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_4_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_4_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_4_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_4_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_4_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_4_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_5_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_5" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_5_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_5_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_5_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_5_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_5_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_5_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_5_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_5_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_6_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_6" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_6_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_6_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_6_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_6_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_6_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_6_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_6_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_6_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_7_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_7" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_7_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_7_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_7_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_7_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_7_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_7_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_7_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_7_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_8_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_8" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_8_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_8_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_8_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_8_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_8_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_8_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_8_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_8_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_9_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_9" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_9_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_9_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_9_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_9_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_9_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_9_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_9_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_9_SubmitButton"
+            style="@style/SubmitButton" />
+
+        <TextView
+            android:id="@+id/breakingBadQuestion_10_Text_View"
+            style="@style/QuestionTextView"
+            android:text="@string/breakingBadQuestion_10" />
+
+        <RadioGroup
+            android:id="@+id/breakingBadQuestion_10_AnswersRadioGroup"
+            style="@style/AnswersRadioGroup">
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_10_Answer_1_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_10_Answer_1" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_10_Answer_2_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_10_Answer_2" />
+
+            <RadioButton
+                android:id="@+id/breakingBadQuestion_10_Answer_3_RadioButton"
+                style="@style/AnswerRadioButton"
+                android:text="@string/breakingBadQuestion_10_Answer_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/breakingBadQuestion_10_SubmitButton"
+            style="@style/SubmitButton" />
+    </LinearLayout>
+</ScrollView>
