@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Question-->
+    <dimen name="question_margin_bottom">8dp</dimen>
+    <dimen name="question_margin_start">16dp</dimen>
+    <dimen name="question_margin_text_size">18sp</dimen>
+
+    <!--Answers Radio Group-->
+    <dimen name="answers_margin_bottom_top">8dp</dimen>
+    <dimen name="answers_margin_start">32dp</dimen>
+
+    <!--Submit Button-->
+    <dimen name="submit_margin_bottom_top">8dp</dimen>
+    <dimen name="submit_margin_end">16dp</dimen>
+
+    <!--News-->
+    <dimen name="piece_of_news_image_dimensions">128dp</dimen>
+    <dimen name="piece_of_news_title_margin_start">8dp</dimen>
+    <dimen name="piece_of_news_description_margin_start">16dp</dimen>
+    <dimen name="piece_of_news_description_margin_end">8dp</dimen>
+    <dimen name="piece_of_news_description_line_spacing">1dp</dimen>
+
+</resources>

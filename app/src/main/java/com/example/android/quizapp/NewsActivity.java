@@ -3,7 +3,7 @@ package com.example.android.quizapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class GameOfThronesActivity extends AppCompatActivity {
+public class NewsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -12,7 +12,7 @@ public class GameOfThronesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_category);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new GameOfThronesFragment())
+                .replace(R.id.container, new NewsFragment())
                 .commit();
     }
 }

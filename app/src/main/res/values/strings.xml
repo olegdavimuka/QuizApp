@@ -217,4 +217,11 @@
     <string name="Question">Question</string>
     <string name="Answer">Answer</string>
     <string name="Submit">Submit</string>
+
+    <!--News-->
+    <string name="no_news_found">No news found.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="news_title_placeholder">NET July 2018 exam notification released; UGC makes drastic changes in exam pattern - Times of India</string>
+    <string name="news_description_placeholder">Education News: The Central Board of Secondary Education (CBSE) has notified the UGC-NET 2018 for Junior Research Fellowship &amp; Eligibility for Assistant Professor wit</string>
+
 </resources>

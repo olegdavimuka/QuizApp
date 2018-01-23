@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#C62828</color>
+    <color name="colorButtonNormal">#EF5350</color>
+
+    <!--View pager and Tab layout-->
+    <color name="tabs_background_color">#E53935</color>
+    <color name="tab_text_color">#808080</color>
+    <color name="selected_tab_text_color">#FFFFFF</color>
 
     <color name="correctAnswer">#cc68af15</color>
     <color name="incorrectAnswer">#ccee3322</color>

@@ -2,6 +2,7 @@ package com.example.android.quizapp;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
@@ -12,10 +13,16 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class BreakingBadFragment extends Fragment {
 
+    HashMap<String, String> savedValues = new HashMap<>();
+
+    private View rootView;
+
     final ArrayList<Question> questions = new ArrayList<>();
+
     int correctAnswersCount = 0;
     int submittedAnswersCount = 0;
 
@@ -24,10 +31,22 @@ public class BreakingBadFragment extends Fragment {
     }
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            for (String key : savedInstanceState.keySet()) {
+                if (!key.equals("android:view_state") && !key.equals("android:user_visible_hint")) {
+                    savedValues.put(key, savedInstanceState.getString(key));
+                }
+            }
+        }
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        final View rootView = inflater.inflate(R.layout.breaking_bad_layout, container, false);
+        rootView = inflater.inflate(R.layout.breaking_bad_layout, container, false);
 
         // Question 1
         Question question_1 = new Question(getString(R.string.breakingBad));
@@ -100,6 +119,38 @@ public class BreakingBadFragment extends Fragment {
         questions.add(question_9);
         questions.add(question_10);
 
+        View view;
+        if (savedInstanceState != null) {
+            for (String key : savedInstanceState.keySet()) {
+                if (!key.equals("android:view_state") && !key.equals("android:user_visible_hint")) {
+                    savedValues.put(key, savedInstanceState.getString(key));
+
+                    switch (key) {
+                        case "correctAnswersCount":
+                            correctAnswersCount = Integer.parseInt(savedInstanceState.getString(key));
+                            break;
+                        case "submittedAnswersCount":
+                            submittedAnswersCount = Integer.parseInt(savedInstanceState.getString(key));
+                            break;
+                        default:
+                            view = rootView.findViewById(Integer.parseInt(key));
+                            if (view instanceof RadioGroup) {
+                                view.setClickable(Boolean.parseBoolean(savedInstanceState.getString(key)));
+
+                                for (int i = 0; i < ((RadioGroup) view).getChildCount(); i++) {
+                                    ((RadioGroup) view).getChildAt(i).setClickable(Boolean.parseBoolean(savedValues.get(key)));
+                                }
+                                rootView.findViewById(view.getNextFocusForwardId()).setClickable(Boolean.parseBoolean(savedValues.get(key)));
+                            }
+                            if (view instanceof RadioButton) {
+                                view.setBackgroundColor(getContext().getColor(Integer.parseInt(savedValues.get(key))));
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+
         View.OnClickListener submit = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,9 +166,15 @@ public class BreakingBadFragment extends Fragment {
                                 // set it's background color to red
                                 rootView.findViewById(question.getAnswersRadioGroup().getCheckedRadioButtonId())
                                         .setBackgroundColor(getContext().getColor(R.color.incorrectAnswer));
+
+                                savedValues.put(String.valueOf(question.getAnswersRadioGroup().getCheckedRadioButtonId()),
+                                        (String.valueOf(R.color.incorrectAnswer)));
                                 // else increase correct answers count
                             } else {
                                 correctAnswersCount++;
+
+                                savedValues.put(String.valueOf(question.getAnswersRadioGroup().getCheckedRadioButtonId()),
+                                        (String.valueOf(R.color.incorrectAnswer)));
                             }
                         }
                         // Anyway increase submitted answers count and block radioButtons and
@@ -128,6 +185,16 @@ public class BreakingBadFragment extends Fragment {
                             question.getAnswersRadioGroup().getChildAt(i).setClickable(false);
                         }
                         question.getSubmitButton().setClickable(false);
+
+
+                        savedValues.put(String.valueOf(question.getCorrectAnswerRadioButton().getId()),
+                                (String.valueOf(R.color.correctAnswer)));
+
+                        savedValues.put(String.valueOf(question.getAnswersRadioGroup().getId()),
+                                (String.valueOf(question.getSubmitButton().isClickable())));
+
+                        savedValues.put("correctAnswersCount", String.valueOf(correctAnswersCount));
+                        savedValues.put("submittedAnswersCount", String.valueOf(submittedAnswersCount));
                     }
                 }
                 // If all the questions are submitted then call result()
@@ -148,7 +215,41 @@ public class BreakingBadFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        refresh();
+        View view;
+        for (String key : savedValues.keySet()) {
+            savedValues.put(key, savedValues.get(key));
+
+            switch (key) {
+                case "correctAnswersCount":
+                    correctAnswersCount = Integer.parseInt(savedValues.get(key));
+                    break;
+                case "submittedAnswersCount":
+                    submittedAnswersCount = Integer.parseInt(savedValues.get(key));
+                    break;
+                default:
+                    view = rootView.findViewById(Integer.parseInt(key));
+                    if (view instanceof RadioGroup) {
+                        view.setClickable(Boolean.parseBoolean(savedValues.get(key)));
+
+                        for (int i = 0; i < ((RadioGroup) view).getChildCount(); i++) {
+                            ((RadioGroup) view).getChildAt(i).setClickable(Boolean.parseBoolean(savedValues.get(key)));
+                        }
+                        rootView.findViewById(view.getNextFocusForwardId()).setClickable(Boolean.parseBoolean(savedValues.get(key)));
+                    }
+                    if (view instanceof RadioButton) {
+                        view.setBackgroundColor(getContext().getColor(Integer.parseInt(savedValues.get(key))));
+                    }
+                    break;
+            }
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        for (String key : savedValues.keySet()) {
+            outState.putString(key, savedValues.get(key));
+        }
     }
 
     private void result() {

@@ -6,8 +6,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class PageAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[] {
-            "Game of Thrones", "Breaking Bad", "Sherlock", "Spartacus" };
+    private String tabTitles[] = new String[]{
+            "Game of Thrones", "Breaking Bad", "Sherlock", "Spartacus", "Entertainment News"};
 
     PageAdapter(FragmentManager fm) {
         super(fm);
@@ -21,14 +21,16 @@ public class PageAdapter extends FragmentPagerAdapter {
             return new BreakingBadFragment();
         } else if (position == 2) {
             return new SherlockFragment();
-        } else {
+        } else if (position == 3) {
             return new SpartacusFragment();
+        } else {
+            return new NewsFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 
     @Override
