@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Game of Thrones-->
+    <integer-array name="gameOfThronesQuestion_1_CorrectAnswersPositions">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="gameOfThronesQuestion_9_CorrectAnswersPositions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <!--Breaking Bad-->
+    <integer-array name="breakingBadQuestion_2_CorrectAnswersPositions">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <integer-array name="breakingBadQuestion_5_CorrectAnswersPositions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="breakingBadQuestion_9_CorrectAnswersPositions">
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <!--Sherlock-->
+    <integer-array name="sherlockQuestion_5_CorrectAnswersPositions">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="sherlockQuestion_6_CorrectAnswersPositions">
+        <item>0</item>
+        <item>3</item>
+    </integer-array>
+
+    <!--Spartacus-->
+    <integer-array name="spartacusQuestion_7_CorrectAnswersPositions">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <integer-array name="spartacusQuestion_9_CorrectAnswersPositions">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+</resources>

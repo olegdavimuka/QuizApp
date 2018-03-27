@@ -9,6 +9,10 @@
     <color name="tab_text_color">#808080</color>
     <color name="selected_tab_text_color">#FFFFFF</color>
 
+    <!--Edit text-->
+    <color name="background_tint_and_text_color_tint">#888888</color>
+
+    <!--Background colors for answers-->
     <color name="correctAnswer">#cc68af15</color>
     <color name="incorrectAnswer">#ccee3322</color>
 </resources>

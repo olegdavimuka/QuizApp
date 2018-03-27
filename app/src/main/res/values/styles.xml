@@ -13,28 +13,53 @@
 
     </style>
 
+    <style name="RootScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RootLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/root_linear_layout_padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
     <style name="QuestionTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/question_margin_bottom</item>
-        <item name="android:layout_marginStart">@dimen/question_margin_start</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
     </style>
 
-    <style name="AnswersRadioGroup">
+    <style name="AnswersRadioGroupAndLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/answers_margin_bottom_top</item>
-        <item name="android:layout_marginStart">@dimen/answers_margin_start</item>
-        <item name="android:layout_marginTop">@dimen/answers_margin_bottom_top</item>
+        <item name="android:layout_marginStart">@dimen/answers_radio_group_margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/answers_radio_group_margin_start_end</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="AnswerRadioButton">
+    <style name="AnswerRadioButtonAndCheckBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:buttonTint">@android:color/white</item>
+    </style>
+
+    <style name="AnswerEditText">
+        <item name="android:layout_marginStart">@dimen/answers_edit_text_margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/answers_edit_text_margin_start_end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/background_tint_and_text_color_tint</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/background_tint_and_text_color_tint</item>
+        <item name="android:hint">@string/edit_text_hint</item>
+        <item name="android:saveEnabled">false</item>
     </style>
 
     <style name="SubmitButton">
@@ -42,9 +67,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">end</item>
         <item name="android:layout_marginBottom">@dimen/submit_margin_bottom_top</item>
-        <item name="android:layout_marginEnd">@dimen/submit_margin_end</item>
         <item name="android:layout_marginTop">@dimen/submit_margin_bottom_top</item>
-        <item name="android:text">@string/Submit</item>
+        <item name="android:text">@string/submit</item>
     </style>
 
 

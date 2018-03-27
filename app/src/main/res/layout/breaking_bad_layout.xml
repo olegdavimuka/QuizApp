@@ -1,326 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/breakingBadScrollView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/RootScrollView"
     android:background="@drawable/breaking_bad_background">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/RootLinearLayout"
         tools:context="com.example.android.quizapp.MainActivity">
 
         <TextView
-            android:id="@+id/breakingBadQuestion_1_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_1" />
 
         <RadioGroup
             android:id="@+id/breakingBadQuestion_1_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_1_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_1_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_1_Answer_1" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_1_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_1_Answer_2" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_1_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_1_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/breakingBadQuestion_1_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_1_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_2_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_2" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_2_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_2_SubmitButton">
+        <LinearLayout
+            android:id="@+id/breakingBadQuestion_2_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_2_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_2_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_2_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_2_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_2_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_2_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_2_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_2_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_2_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_2_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/breakingBadQuestion_2_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/breakingBadQuestion_2_SubmitButton"
-            style="@style/SubmitButton" />
-
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_2_LinearLayout" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_3_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/breakingBadQuestion_3_EditText"
             android:text="@string/breakingBadQuestion_3" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_3_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_3_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_3_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_3_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_3_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_3_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_3_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_3_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/breakingBadQuestion_3_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/breakingBadQuestion_3_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_3_EditText" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_4_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/breakingBadQuestion_4_EditText"
             android:text="@string/breakingBadQuestion_4" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_4_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_4_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_4_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_4_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_4_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_4_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_4_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_4_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/breakingBadQuestion_4_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/breakingBadQuestion_4_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_4_EditText" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_5_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_5" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_5_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_5_SubmitButton">
+        <LinearLayout
+            android:id="@+id/breakingBadQuestion_5_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_5_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_5_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_5_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_5_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_5_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_5_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_5_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_5_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_5_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_5_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/breakingBadQuestion_5_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/breakingBadQuestion_5_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_5_LinearLayout" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_6_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_6" />
 
         <RadioGroup
             android:id="@+id/breakingBadQuestion_6_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_6_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_6_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_6_Answer_1" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_6_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_6_Answer_2" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_6_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_6_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/breakingBadQuestion_6_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_6_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_7_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_7" />
 
         <RadioGroup
             android:id="@+id/breakingBadQuestion_7_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_7_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_7_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_7_Answer_1" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_7_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_7_Answer_2" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_7_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_7_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/breakingBadQuestion_7_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_7_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_8_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_8" />
 
         <RadioGroup
             android:id="@+id/breakingBadQuestion_8_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_8_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_8_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_8_Answer_1" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_8_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_8_Answer_2" />
 
             <RadioButton
                 android:id="@+id/breakingBadQuestion_8_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_8_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/breakingBadQuestion_8_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_8_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_9_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/breakingBadQuestion_9" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_9_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_9_SubmitButton">
+        <LinearLayout
+            android:id="@+id/breakingBadQuestion_9_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_9_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_9_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_9_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_9_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_9_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_9_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_9_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_9_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/breakingBadQuestion_9_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/breakingBadQuestion_9_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/breakingBadQuestion_9_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/breakingBadQuestion_9_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/breakingBadQuestion_9_LinearLayout" />
 
         <TextView
-            android:id="@+id/breakingBadQuestion_10_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/breakingBadQuestion_10_EditText"
             android:text="@string/breakingBadQuestion_10" />
 
-        <RadioGroup
-            android:id="@+id/breakingBadQuestion_10_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/breakingBadQuestion_10_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_10_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_10_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_10_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_10_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/breakingBadQuestion_10_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/breakingBadQuestion_10_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/breakingBadQuestion_10_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/breakingBadQuestion_10_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:layout_marginBottom="0dp"
+            android:nextFocusUp="@id/breakingBadQuestion_10_EditText" />
     </LinearLayout>
 </ScrollView>

@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/spartacusScrollView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/RootScrollView"
     android:background="@drawable/spartacus_background">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/RootLinearLayout"
         tools:context="com.example.android.quizapp.MainActivity">
 
         <TextView
-            android:id="@+id/spartacusQuestion_1_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_1" />
 
         <RadioGroup
             android:id="@+id/spartacusQuestion_1_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_1_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_1_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_1_Answer_1" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_1_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_1_Answer_2" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_1_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_1_Answer_3" />
 
         </RadioGroup>
@@ -44,283 +39,236 @@
             style="@style/SubmitButton" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_2_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_2" />
 
         <RadioGroup
             android:id="@+id/spartacusQuestion_2_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_2_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_2_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_2_Answer_1" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_2_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_2_Answer_2" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_2_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_2_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/spartacusQuestion_2_SubmitButton"
-            style="@style/SubmitButton" />
-
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_2_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_3_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_3" />
 
         <RadioGroup
             android:id="@+id/spartacusQuestion_3_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_3_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_3_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_3_Answer_1" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_3_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_3_Answer_2" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_3_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_3_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/spartacusQuestion_3_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_3_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_4_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/spartacusQuestion_4_EditText"
             android:text="@string/spartacusQuestion_4" />
 
-        <RadioGroup
-            android:id="@+id/spartacusQuestion_4_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_4_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_4_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_4_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_4_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_4_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_4_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_4_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/spartacusQuestion_4_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/spartacusQuestion_4_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_4_EditText" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_5_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_5" />
 
         <RadioGroup
             android:id="@+id/spartacusQuestion_5_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_5_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_5_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_5_Answer_1" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_5_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_5_Answer_2" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_5_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_5_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/spartacusQuestion_5_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_5_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_6_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/spartacusQuestion_6_EditText"
             android:text="@string/spartacusQuestion_6" />
 
-        <RadioGroup
-            android:id="@+id/spartacusQuestion_6_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_6_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_6_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_6_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_6_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_6_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_6_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_6_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/spartacusQuestion_6_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/spartacusQuestion_6_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_6_EditText" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_7_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_7" />
 
-        <RadioGroup
-            android:id="@+id/spartacusQuestion_7_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_7_SubmitButton">
+        <LinearLayout
+            android:id="@+id/spartacusQuestion_7_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_7_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_7_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_7_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_7_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_7_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_7_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_7_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_7_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_7_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/spartacusQuestion_7_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/spartacusQuestion_7_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/spartacusQuestion_7_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_7_LinearLayout" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_8_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/spartacusQuestion_8_EditText"
             android:text="@string/spartacusQuestion_8" />
 
-        <RadioGroup
-            android:id="@+id/spartacusQuestion_8_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_8_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_8_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_8_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_8_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_8_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/spartacusQuestion_8_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/spartacusQuestion_8_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/spartacusQuestion_8_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/spartacusQuestion_8_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_8_EditText" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_9_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_9" />
 
-        <RadioGroup
-            android:id="@+id/spartacusQuestion_9_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_9_SubmitButton">
+        <LinearLayout
+            android:id="@+id/spartacusQuestion_9_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_9_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_9_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_9_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_9_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_9_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_9_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/spartacusQuestion_9_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/spartacusQuestion_9_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_9_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/spartacusQuestion_9_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/spartacusQuestion_9_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/spartacusQuestion_9_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/spartacusQuestion_9_LinearLayout" />
 
         <TextView
-            android:id="@+id/spartacusQuestion_10_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/spartacusQuestion_10" />
 
         <RadioGroup
             android:id="@+id/spartacusQuestion_10_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/spartacusQuestion_10_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_10_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_10_Answer_1" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_10_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_10_Answer_2" />
 
             <RadioButton
                 android:id="@+id/spartacusQuestion_10_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/spartacusQuestion_10_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/spartacusQuestion_10_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:layout_marginBottom="0dp"
+            android:nextFocusUp="@id/spartacusQuestion_10_AnswersRadioGroup" />
     </LinearLayout>
 </ScrollView>

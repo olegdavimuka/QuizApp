@@ -1,258 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/gameOfThronesScrollView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/RootScrollView"
     android:background="@drawable/game_of_thrones_background">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/RootLinearLayout"
         tools:context="com.example.android.quizapp.MainActivity">
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_1_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_1" />
 
-        <RadioGroup
-            android:id="@+id/gameOfThronesQuestion_1_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_1_SubmitButton">
+        <LinearLayout
+            android:id="@+id/gameOfThronesQuestion_1_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_1_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_1_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_1_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_1_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_1_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_1_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_1_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_1_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_1_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_1_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/gameOfThronesQuestion_1_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_1_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_1_LinearLayout" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_2_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/gameOfThronesQuestion_2_EditText"
             android:text="@string/gameOfThronesQuestion_2" />
 
-        <RadioGroup
-            android:id="@+id/gameOfThronesQuestion_2_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_2_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_2_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_2_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_2_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_2_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_2_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_2_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/gameOfThronesQuestion_2_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/gameOfThronesQuestion_2_SubmitButton"
-            style="@style/SubmitButton" />
-
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_2_EditText" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_3_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_3" />
 
         <RadioGroup
             android:id="@+id/gameOfThronesQuestion_3_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_3_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_3_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_3_Answer_1" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_3_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_3_Answer_2" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_3_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_3_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_3_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_3_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_4_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/gameOfThronesQuestion_4_EditText"
             android:text="@string/gameOfThronesQuestion_4" />
 
-        <RadioGroup
-            android:id="@+id/gameOfThronesQuestion_4_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_4_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_4_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_4_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_4_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_4_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_4_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_4_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/gameOfThronesQuestion_4_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/gameOfThronesQuestion_4_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_4_EditText" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_5_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_5" />
 
         <RadioGroup
             android:id="@+id/gameOfThronesQuestion_5_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_5_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_5_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_5_Answer_1" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_5_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_5_Answer_2" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_5_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_5_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_5_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_5_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_6_Text_View"
             style="@style/QuestionTextView"
+            android:labelFor="@id/gameOfThronesQuestion_6_EditText"
             android:text="@string/gameOfThronesQuestion_6" />
 
-        <RadioGroup
-            android:id="@+id/gameOfThronesQuestion_6_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_6_SubmitButton">
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_6_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_6_Answer_1" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_6_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_6_Answer_2" />
-
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_6_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
-                android:text="@string/gameOfThronesQuestion_6_Answer_3" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/gameOfThronesQuestion_6_EditText"
+            style="@style/AnswerEditText" />
 
         <Button
             android:id="@+id/gameOfThronesQuestion_6_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_6_EditText" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_7_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_7" />
 
         <RadioGroup
             android:id="@+id/gameOfThronesQuestion_7_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_7_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_7_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_7_Answer_1" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_7_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_7_Answer_2" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_7_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_7_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_7_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_7_AnswersRadioGroup" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_8_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_8" />
 
         <RadioGroup
             android:id="@+id/gameOfThronesQuestion_8_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
+            style="@style/AnswersRadioGroupAndLinearLayout"
             android:nextFocusForward="@id/gameOfThronesQuestion_8_SubmitButton">
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_8_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_8_Answer_1" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_8_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_8_Answer_2" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_8_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_8_Answer_3" />
 
         </RadioGroup>
@@ -262,65 +207,69 @@
             style="@style/SubmitButton" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_9_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_9" />
 
-        <RadioGroup
-            android:id="@+id/gameOfThronesQuestion_9_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_9_SubmitButton">
+        <LinearLayout
+            android:id="@+id/gameOfThronesQuestion_9_LinearLayout"
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_9_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_9_Answer_1_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_9_Answer_1" />
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_9_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_9_Answer_2_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_9_Answer_2" />
 
-            <RadioButton
-                android:id="@+id/gameOfThronesQuestion_9_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_9_Answer_3_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_9_Answer_3" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/gameOfThronesQuestion_9_Answer_4_CheckBox"
+                style="@style/AnswerRadioButtonAndCheckBox"
+                android:text="@string/gameOfThronesQuestion_9_Answer_4" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_9_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:nextFocusUp="@id/gameOfThronesQuestion_9_LinearLayout" />
 
         <TextView
-            android:id="@+id/gameOfThronesQuestion_10_Text_View"
             style="@style/QuestionTextView"
             android:text="@string/gameOfThronesQuestion_10" />
 
         <RadioGroup
             android:id="@+id/gameOfThronesQuestion_10_AnswersRadioGroup"
-            style="@style/AnswersRadioGroup"
-            android:nextFocusForward="@id/gameOfThronesQuestion_10_SubmitButton">
+            style="@style/AnswersRadioGroupAndLinearLayout">
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_10_Answer_1_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_10_Answer_1" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_10_Answer_2_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_10_Answer_2" />
 
             <RadioButton
                 android:id="@+id/gameOfThronesQuestion_10_Answer_3_RadioButton"
-                style="@style/AnswerRadioButton"
+                style="@style/AnswerRadioButtonAndCheckBox"
                 android:text="@string/gameOfThronesQuestion_10_Answer_3" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/gameOfThronesQuestion_10_SubmitButton"
-            style="@style/SubmitButton" />
+            style="@style/SubmitButton"
+            android:layout_marginBottom="0dp"
+            android:nextFocusUp="@id/gameOfThronesQuestion_10_AnswersRadioGroup" />
     </LinearLayout>
 </ScrollView>

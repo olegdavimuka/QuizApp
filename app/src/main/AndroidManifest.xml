@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.quizapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +20,6 @@
         <activity android:name=".BreakingBadActivity" />
         <activity android:name=".SherlockActivity" />
         <activity android:name=".SpartacusActivity" />
-        <activity android:name=".NewsActivity" />
     </application>
 
 </manifest>

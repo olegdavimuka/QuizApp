@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:background="@color/tabs_background_color"
         app:tabMode="scrollable"
+        app:tabGravity="fill"
+        android:layout_gravity="center_horizontal"
         app:tabSelectedTextColor="@color/selected_tab_text_color"
         app:tabTextColor="@color/tab_text_color" />
 

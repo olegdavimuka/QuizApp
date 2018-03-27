@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Question-->
-    <dimen name="question_margin_bottom">8dp</dimen>
-    <dimen name="question_margin_start">16dp</dimen>
-    <dimen name="question_margin_text_size">18sp</dimen>
 
-    <!--Answers Radio Group-->
-    <dimen name="answers_margin_bottom_top">8dp</dimen>
-    <dimen name="answers_margin_start">32dp</dimen>
+    <!--Root Linear Layout-->
+    <dimen name="root_linear_layout_padding">16dp</dimen>
 
-    <!--Submit Button-->
-    <dimen name="submit_margin_bottom_top">8dp</dimen>
-    <dimen name="submit_margin_end">16dp</dimen>
+    <!--Questions Text Views-->
+    <dimen name="question_margin_bottom">16dp</dimen>
+    <dimen name="question_text_size">18sp</dimen>
 
-    <!--News-->
-    <dimen name="piece_of_news_image_dimensions">128dp</dimen>
-    <dimen name="piece_of_news_title_margin_start">8dp</dimen>
-    <dimen name="piece_of_news_description_margin_start">16dp</dimen>
-    <dimen name="piece_of_news_description_margin_end">8dp</dimen>
-    <dimen name="piece_of_news_description_line_spacing">1dp</dimen>
+    <!--Answers Radio Groups and Linear Layouts-->
+    <dimen name="answers_radio_group_margin_start_end">16dp</dimen>
+
+    <!--Answer Edit Texts-->
+    <dimen name="answers_edit_text_margin_start_end">16dp</dimen>
+
+    <!--Submit Buttons-->
+    <dimen name="submit_margin_bottom_top">16dp</dimen>
 
 </resources>
